@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body style='background:darkgrey'>
+        <h2 id="mem" onclick="this.innerHTML= this.innerHTML== correct ? 'i mean memory' : correct  ">Memory</h2>
+        <p id="output" style="font-size:20pt;background:lightblue"onclick="prevItem()">You can't succeed even if you try</p>
+        <input type="button" onclick="items = genSeq(); document.getElementById('inputGuess').value =''" >
+<input type="button" onclick="document.getElementById('optionsForm').style.display = document.getElementById('optionsForm').style.display == 'none' ? 'block' : 'none'"></input>
+<div id="optionsForm" style="display:none">
+<label>Number Of Items:</label> <input id="unroundedNum" value="50" onchange="unroundedNum = value"></input>
+<br></br><label>Items Multiple Of:</label> <input id="itemRoundNum" value="1" onchange="itemRoundNum = value"></input>
+<br></br><label>Item Selection:</label> <input id="ItemChoices" value="[1,2,3,4,5,6,7,8,9]" onchange="ItemChoices = value"></input>
+<br></br><label>Memory Mode:</label> <input id="mode" value = "0" onchange="mode = value"></input>
+<br></br><label>Number Of Items to Show:</label> <input id="numItemsShown" value = "1" onchange="numItemsShown = value  "></input>
+<br></br><label>Special Conditons:</label> <input id="specialRules" change="specialRules = value                "></input>
+</div>
+<p id='output'></p>
+ <input id="inputGuess" onchange="guess(value)"></input>
+<pre style='background:wheat;width:100%' onclick="nextItem(); this.style.background = 'black'">
+
+
+
+
+
+
+
+
+
+
+
+NEXT
+
+
+
+
+
+
+
+
+
+
+</pre>
+<script src="index.js"></script>
+</body>
+</html>
