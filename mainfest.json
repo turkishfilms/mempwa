@@ -1,22 +1,21 @@
 {
     "short_name": "Memory",
     "name": "Memory - Progressive Web App",
-    "icons": [
-      {
-        "src": "/images/icons-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "/images/icons-512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
+    "icons": [{
+            "src": "/images/dog192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/images/dog512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
     ],
-    "start_url": "/?source=pwa",
+    "start_url": "https://warm-insect-77.loca.lt/",
     "background_color": "#3367D6",
     "display": "fullscreen",
     "scope": "/",
     "theme_color": "#3367D6",
     "description": "Memory Trainer"
-  }
+}
