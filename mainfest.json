@@ -12,7 +12,7 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "https://warm-insect-77.loca.lt/",
+    "start_url": "https://mem-pwa.herokuapp.com/",
     "background_color": "#3367D6",
     "display": "fullscreen",
     "scope": "/",
