@@ -1,7 +1,3 @@
-//const NumOfItems = 50,
-//      itemCount = Math.round(NumOfItems/3)*3,
-//     itemChoices = [1,2,3,4,5,6,7,8,9],
-//      allMode = 0
 
 let unroundedNum = 50, //at least this many will be shown
     itemRoundNum = 1, //the multiple of number of items
@@ -48,8 +44,6 @@ function displayItem() {
     for (let i = 0; i < numItemsShown; i++) {
         shownNums.push(items[currentIndex + i])
     }
-
-    // document.getElementById('output').innerHTML = items[currentIndex]
     document.getElementById('output').innerHTML = shownNums.join('')
     document.getElementById('output').style.textDecoration = `${currentIndex % 2 == 0 ? 'none': 'underline'}`
     if (currentIndex > itemCount - 1) document.getElementById('output').innerHTML = `Guess`
