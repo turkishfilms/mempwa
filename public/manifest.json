@@ -2,12 +2,12 @@
     "short_name": "Memory",
     "name": "Memory - Progressive Web App",
     "icons": [{
-            "src": "/public/assets/dog512.png",
+            "src": "assets/dog512.png",
             "type": "image/png",
             "sizes": "512x512"
         },
         {
-            "src": "/public/assets/dog192.png",
+            "src": "assets/dog192.png",
             "type": "image/png",
             "sizes": "192x192"
         }

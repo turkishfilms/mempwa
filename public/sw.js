@@ -1,20 +1,4 @@
 
-self.addEventListener('yo', e => {
-    e.waitUntil(
-      caches.open('mempwa').then(cache => {
-          cache.add('/')
-          cache.add('index.html')
-          cache.add('index.js')
-          cache.add('style.css')
-          cache.add('assets')
-          cache.add('manifest.json')
-          console.log("CACHED BABAY")
-          console.log(cache)
-          return cache
-      })
-    );
-   });
-
 self.addEventListener('install', e => {
     e.waitUntil(
       caches.open('mempwa').then(cache => {
@@ -30,10 +14,6 @@ self.addEventListener('install', e => {
       })      
     );
    });
-   
-
-
-
 
 self.addEventListener('fetch', e =>{
     console.log("event",e)
