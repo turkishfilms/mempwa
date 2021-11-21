@@ -2,14 +2,14 @@
     "short_name": "Memory",
     "name": "Memory - Progressive Web App",
     "icons": [{
-            "src": "/images/dog192.png",
-            "type": "image/png",
-            "sizes": "192x192"
-        },
-        {
-            "src": "/images/dog512.png",
+            "src": "/public/assets/dog512.png",
             "type": "image/png",
             "sizes": "512x512"
+        },
+        {
+            "src": "/public/assets/dog192.png",
+            "type": "image/png",
+            "sizes": "192x192"
         }
     ],
     "start_url": "https://mem-pwa.herokuapp.com/",

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style.css" />
     <link rel="manifest" href="manifest.json">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 
@@ -40,14 +40,10 @@
     <input id="inputGuess" onchange="guess(value) " style="width:100%"></input>
     <p style='background:wheat;width:100%;height:7rem;text-align:center;line-height:7rem;font-size:8vw'
         onclick="nextItem()">NEXT</p>
-    <p id="list">PROGRESS:</p>
+    <p id="list">PROGRESSIV:</p>
     <script src="index.js"></script>
     <script>
-        if('serviceWorker' in navigator) {
-          navigator.serviceWorker
-                   .register('/sw.js')
-                   .then(function() { console.log("SWR"); });
-        }
+        if(!('serviceWorker' in navigator)) navigator.serviceWorker.register('/sw.js');
         </script>
         
 </body>
